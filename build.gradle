@@ -131,6 +131,9 @@ subprojects {
         shadow "org.apache.flink:flink-streaming-java:${flinkVersion}"
         shadow "org.apache.flink:flink-streaming-scala_${scalaBinaryVersion}:${flinkVersion}"
 
+        //Lombok
+        compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
+
         // allows using Flink's web UI when running in the IDE:
         shadow "org.apache.flink:flink-runtime-web:${flinkVersion}"
 
